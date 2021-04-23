@@ -1,0 +1,125 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #E5D5A5;
+    /*background-color: #EFE1B8;*/
+    color: white;
+    margin: 40px auto 40px auto;
+    width: 640px;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+
+nav a {
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    margin: 0 25px 0 0;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #1ED37C;
+    transition: all 0.5s;
+    font-weight: 510;
+}
+
+nav a:hover {
+    color: #1200DB;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+
+header /*img*/ {
+    align-content: center;
+    background-position: center;
+    height: 100px;
+    width: 640px;
+    margin: 0;
+    padding: 1px 0 10px 0;
+    /*background: radial-gradient(50% 50% at 50% 50%, yellow 0%, #E5D5A5 100%);*/
+}
+
+nav {
+    background-color: #1ED37C;
+    padding: 35px 30px 30px 30px;
+    margin: 0;
+}
+
+h1 { 
+    padding:  1px 40px 5px 30px;
+    font-weight: 950;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: none;
+    font-size: 42px;
+    text-decoration: #1200DB double 1.5px underline;
+    -webkit-text-stroke: 1.5px  #1200DB;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+h1 {
+    padding: 0 40px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-size: 70px;
+    /*-webkit-text-stroke: 2px white;
+    -webkit-text-fill-color:
+    color: #F6613C;
+    text-decoration: #1200DB wavy underline 2px;
+    /*text-shadow: 0px 4px 4px rgba(224, 224, 224, 0.473);
+    
+    line-height: 1;
+    }*/
+
+
+
+h2, h3 {
+    font-weight: 500;
+    font-size: 36px;
+    font-style: italic;
+}
+
+main section {
+    background-color: #1200DB;
+    padding: 30px;
+}
+
+
+section.fullbleed {
+    padding: 0;
+    width: 640px;
+    height: 427.34px;
+    background-size: 100%;
+    background-image: url("assets/lily.jpg");
+    background-blend-mode: difference;
+    margin: 0;
+}
+
+section.mid {
+   background-image: url("assets/lilypads-thick.jpg");
+}
+
+section.bottom {
+    background-image: url("assets/lilypads-spread.jpg");
+}
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 20px;
+        margin: 0;
+        width: auto;
+    }
+
+    h2, h3 {
+        font-size: 32px;
+    }
+
+    section.fullbleed {
+        width: auto;
+        height: 275px;
+    }
+    nav a {
+        display: block;
+        padding: 8px 0 8px 0;
+    }
+}
